@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="ex01.Controller">
+   <children>
+      <Label layoutX="81.0" layoutY="38.0" text="ListVeiw">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="38.0" text="ImageView">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="fxListView" layoutX="19.0" layoutY="86.0" prefHeight="120.0" prefWidth="180.0" />
+      <ImageView fx:id="fxImageView" fitHeight="120.0" fitWidth="180.0" layoutX="203.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

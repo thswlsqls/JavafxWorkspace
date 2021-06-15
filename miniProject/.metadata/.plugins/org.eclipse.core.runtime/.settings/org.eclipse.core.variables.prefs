@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.eclipse.core.variables.valueVariables=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<valueVariables>\r\n    <valueVariable description\="myFxml17" name\="myFxml17" readOnly\="false" value\="C\:\\Util\\javafx-sdk-17\\lib"/>\r\n    <valueVariable description\="javafxCompControls17" name\="javafxCompControls17" readOnly\="false" value\="--module-path ${myFxml17} --add-modules\=javafx.controls"/>\r\n</valueVariables>\r\n

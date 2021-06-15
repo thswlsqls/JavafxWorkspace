@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex01.Controller">
+   <children>
+      <Label layoutX="72.0" layoutY="30.0" text="ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="77.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fxId" layoutX="149.0" layoutY="31.0" />
+      <TextField fx:id="fxPw" layoutX="149.0" layoutY="78.0" />
+      <Button layoutX="44.0" layoutY="313.0" mnemonicParsing="false" onAction="#loginProc" prefHeight="38.0" prefWidth="74.0" text="확 인">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="246.0" layoutY="313.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="74.0" text="취 소">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label layoutX="45.0" layoutY="126.0" text="이름">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fxName" layoutX="149.0" layoutY="127.0" />
+      <RadioButton fx:id="rdoMan" layoutX="149.0" layoutY="182.0" mnemonicParsing="false" onAction="#rdoMan" text="남" />
+      <RadioButton fx:id="rdoWoman" layoutX="204.0" layoutY="182.0" mnemonicParsing="false" text="여" />
+      <Label layoutX="47.0" layoutY="182.0" text="성별" />
+      <Label layoutX="47.0" layoutY="222.0" text="취미" />
+      <CheckBox layoutX="149.0" layoutY="222.0" mnemonicParsing="false" text="음악" />
+      <CheckBox layoutX="205.0" layoutY="222.0" mnemonicParsing="false" text="스포츠" />
+      <CheckBox layoutX="275.0" layoutY="222.0" mnemonicParsing="false" text="영화" />
+      <Label layoutX="47.0" layoutY="261.0" text="연령구분" />
+      <ComboBox layoutX="146.0" layoutY="257.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

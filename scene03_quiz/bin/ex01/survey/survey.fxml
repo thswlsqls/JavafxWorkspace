@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="637.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex01.survey.SurveyController">
+   <children>
+      <Label alignment="CENTER" layoutX="404.0" layoutY="36.0" maxWidth="200.0" prefHeight="42.0" prefWidth="200.0" text="설문조사 결과">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="445.0" text="10대:" />
+      <Label layoutX="92.0" layoutY="484.0" text="20대:" />
+      <Label layoutX="92.0" layoutY="526.0" text="30대:" />
+      <Label layoutX="92.0" layoutY="567.0" text="40대:" />
+      <Label layoutX="471.0" layoutY="484.0" text="남성:" />
+      <Label layoutX="471.0" layoutY="526.0" text="여성:" />
+      <Label layoutX="427.0" layoutY="566.0" text="설문 조사 총 인원:" textFill="#1535eb">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="784.0" layoutY="484.0" text="해외여행:" />
+      <Label layoutX="784.0" layoutY="526.0" text="국내여행:" />
+      <Label layoutX="784.0" layoutY="567.0" text="없음:" />
+      <Label fx:id="lblMan" layoutX="556.0" layoutY="484.0" text="&quot;&quot;" />
+      <Label fx:id="lblWoman" layoutX="556.0" layoutY="526.0" text="&quot;&quot;" />
+      <Label fx:id="lblForeign" layoutX="895.0" layoutY="484.0" text="&quot;&quot;" />
+      <Label fx:id="lblDomestic" layoutX="895.0" layoutY="526.0" text="&quot;&quot;" />
+      <Label fx:id="lblNone" layoutX="895.0" layoutY="567.0" text="&quot;&quot;" />
+      <Label fx:id="lbl10" layoutX="174.0" layoutY="445.0" text="&quot;&quot;" />
+      <Label fx:id="lbl20" layoutX="174.0" layoutY="484.0" text="&quot;&quot;" />
+      <Label fx:id="lbl30" layoutX="174.0" layoutY="527.0" text="&quot;&quot;" />
+      <Label fx:id="lbl40" layoutX="174.0" layoutY="568.0" text="&quot;&quot;" />
+      <Label fx:id="lblSum" layoutX="556.0" layoutY="567.0" text="&quot;&quot;" textFill="#1535eb">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <HBox layoutX="12.0" layoutY="78.0" prefHeight="316.0" prefWidth="984.0">
+         <children>
+            <PieChart fx:id="pieChart" prefHeight="300.0" prefWidth="330.0" />
+            <BarChart fx:id="barChart" prefHeight="300.0" prefWidth="330.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis prefHeight="120.0" side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <AreaChart fx:id="areaChart" prefHeight="300.0" prefWidth="330.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </AreaChart>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

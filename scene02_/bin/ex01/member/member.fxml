@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="422.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex01.member.MemberController">
+   <children>
+      <Label layoutX="48.0" layoutY="188.0" text="성 별">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="236.0" text="취 미">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="290.0" text="연령구분">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="59.0" layoutY="351.0" mnemonicParsing="false" onAction="#memberProc" text="확 인">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="251.0" layoutY="351.0" mnemonicParsing="false" onAction="#cancelProc" text="취 소">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="rdoWoman" layoutX="134.0" layoutY="190.0" mnemonicParsing="false" selected="true" text="여성">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdoMan" layoutX="217.0" layoutY="191.0" mnemonicParsing="false" text="남성" toggleGroup="$gender">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <CheckBox fx:id="chkMusic" layoutX="133.0" layoutY="238.0" mnemonicParsing="false" text="음악">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkSport" layoutX="217.0" layoutY="238.0" mnemonicParsing="false" text="스포츠">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkMovie" layoutX="329.0" layoutY="238.0" mnemonicParsing="false" text="영화">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <ComboBox fx:id="cmbAge" layoutX="142.0" layoutY="290.0" prefHeight="29.0" prefWidth="150.0" promptText="연령대 선택" />
+      <TextField fx:id="fxId" layoutX="142.0" layoutY="32.0" />
+      <TextField fx:id="fxPw" layoutX="142.0" layoutY="74.0" />
+      <TextField fx:id="fxName" layoutX="142.0" layoutY="150.0" />
+      <Label layoutX="58.0" layoutY="29.0" text="ID">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="71.0" text="PW">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="147.0" text="이름">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fxPwChk" layoutX="142.0" layoutY="112.0" />
+      <Label layoutX="47.0" layoutY="109.0" text="PWChk">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
